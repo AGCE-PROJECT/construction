@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Customers</title>
+    <style>
+        h2{
+            text-align: center;
+            color:  rgb(20, 110, 194);
+        }
+        .customer_head{
+            text-align: center;
+            font-size:40px;
+            color: rgb(20, 110, 194);
+            font-weight: bolder;
+            text-transform: capitalize;
+        }
+
+        .customer_img{
+            background: url("https://images.unsplash.com/photo-1603714228681-b399854b8f80?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fGhhcHB5JTIwY3VzdG9tZXJzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+           width:100%;
+          height:600px;
+           background-repeat: no-repeat;
+           background-size: 100%;
+        }
+        .column_text p{
+            font-size: 20px;
+        }
+        .customer_review .row1{
+             display:flex;
+             flex-direction: row;
+             justify-content: center;
+             
+        }
+        .customer_review .row2{
+             display:flex;
+             flex-direction: row-reverse;
+             justify-content: center;
+             
+        }
+        .customer_review .column_img{
+            width:50%;
+            justify-content: center;
+            padding-left: 8%;
+            
+            
+        }
+        .customer_review .column_img img{
+            margin-top: 20px;
+            width:90%;
+        }
+
+        .customer_review .column_text{
+            width:50%;
+            padding:10% 10%;
+            align-items: center;
+            text-align: justify;
+        }
+
+        @media only screen and (max-width:768px){
+            
+           .customer_head h1{
+                font-size: 24px;
+            }
+            .customer_img{
+                padding-bottom: 0px;
+                height:300px;
+                background-size: 100%;
+            }
+            .customer_review .row1{
+            width:100%;
+            flex-wrap: wrap;
+            
+            }
+            .customer_review .row2{
+            width:100%;
+            flex-wrap: wrap;            
+            }
+            .customer_review .column_img{
+                padding-left: 0px;
+                width:80%;
+                justify-content: center;
+            }
+            .customer_review .column_text{
+                width:90%;
+                padding:5%;
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <section class="customer_head">
+        <h1>Happy Customers</h1>
+    </section>
+    <section class="customer_img">
+        
+    </section>
+    <section class="customer_review">
+        <div class="row1">
+            <div class="column_img">
+                <img src="http://estate.atulsoftwares.in/estate/wp-content/uploads/2021/01/Daco_4913011.png">
+                <h2>sdfgeg etg</h2>
+            </div>
+            <div class="column_text">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                     Lorem ipsum dolor sit aLorem ipsum dolor sit amet,
+                      consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                       mattis, 
+                    pulvinar dapibus leo. Lorem ipsum dolor sit a</p>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="column_img">
+                <img src="http://estate.atulsoftwares.in/estate/wp-content/uploads/2021/01/Daco_4913011.png">
+                <h2>sdfgeg etg</h2>
+            </div>
+            <div class="column_text">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                     Lorem ipsum dolor sit aLorem ipsum dolor sit amet,
+                      consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                       mattis, 
+                    pulvinar dapibus leo. Lorem ipsum dolor sit a</p>
+            </div>
+        </div>
+        <div class="row1">
+            <div class="column_img">
+                <img src="http://estate.atulsoftwares.in/estate/wp-content/uploads/2021/01/Daco_4911668.png">
+                <h2>sdfgeg etg</h2>
+            </div>
+            <div class="column_text">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                     Lorem ipsum dolor sit aLorem ipsum dolor sit amet,
+                      consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                       mattis, 
+                    pulvinar dapibus leo. Lorem ipsum dolor sit a</p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

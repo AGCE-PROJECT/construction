@@ -13,16 +13,9 @@
           
         }
         
-        nav{
-            float:right;
-            
-        }
+      
         
-        .logo img{
-            float:left;
-            padding: 10px;
-            
-        }
+       
         
         ul li{
           display: inline-block; 
@@ -235,14 +228,14 @@
             padding: 20px 0S;
         }
 
-        .vertical-nav a {
+      /*  .vertical-nav a {
             display: block;
             text-align: center;
             padding: 16px;
             transition: all 0.3s ease;
             text-decoration: none;
             font-size: 20px;
-          }
+          }*/
 
           #amenities,#views{
               margin-left:20%;
@@ -598,9 +591,9 @@
       }
       
 
-        .vertical-nav{
+       /* .vertical-nav{
             display:none;
-        }
+        }*/
 
         h1{
 
