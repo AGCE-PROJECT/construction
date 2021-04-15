@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link href="stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        .aboutHead{
+            position: relative;
+            top:100px;
+            align-items: center;
+            justify-content: center;
+            margin:auto;
+            width: 100%;
+            height:500px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-image: url("https://images.unsplash.com/photo-1599809275671-b5942cabc7a2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8cmVhbCUyMGVzdGF0ZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+        }
+        .aboutHead>h1{
+            color: #ffffff;
+            margin: auto;
+            text-align: center;
+            padding-top: 180px;
+            font-size: 50px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+        .about .text,.about .img{
+            margin-top:100px;
+        }
+        .about,.vision,.Details{
+             display: flex;
+             flex-direction: row;
+             
+        }
+        .vision{
+            flex-direction:row-reverse;
+        }
+        .about>.text,.vision>.text,.Details>.text{
+            width:50%;
+            background-color: rgb(20, 7, 56);
+            color: #ffffff;
+            align-items: center;
+            justify-content: center;
+        }
+        .about>.text>h1,.vision>.text>h1,.Details>.text>h1{
+            text-align:center;
+            font-size: 40px;
+            font-weight: bolder;
+            text-transform: capitalize;
+            margin:60px 0;
+        }
+        .about>.text>p,.vision>.text>p,.Details>.text>p{
+            text-align:justify;
+            font-size:18px;
+            padding:0 8%;
+        }
+        .img{
+            width: 50%;
+            height:500px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-image: url("https://images.unsplash.com/photo-1599809275671-b5942cabc7a2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8cmVhbCUyMGVzdGF0ZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+        
+        }
+     
+        @media only screen and (max-width: 768px) {
+            .aboutHead{
+                height:400px;
+            }
+            .aboutHead>h1{
+            color: #ffffff;
+            margin: auto;
+            text-align: center;            
+            font-size: 30px;
+            font-weight: 500 px;
+            text-transform: capitalize;
+        }
+           .about,.vision,.Details{
+               flex-wrap: wrap;
+              
+           }
+           .about .text,.about .img,.vision .text,.vision .img,.Details .text,.Details .img{
+               flex: 100%;
+           }
+           .about .img,.vision .img,.Details .img{
+               height:350px;
+           }
+
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <label class="logo">Rudra </label>
+        <ul>
+            <a href="index.html" class="active"><li>Home</li></a>
+            <a href="about.html"><li>About Us</li></a>
+            <a href="projects.html"><li>Projects</li></a>
+            <a href="customer.html"><li>Customers</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+        </ul>
+        
+    </nav>
+    <section class="aboutHead">
+        <h1>When we build, let us think that we build forever</h1>
+    </section>
+    <section class="about">
+      <div class="text">
+          <h1>About Us</h1>
+          <p>Rudra Construction is an cinstruction, Renovetion company in Satara, Maharashtra.
+               Our journey started on 2017 and this period pushed us into learning and doing things simultaneously.
+
+            Sheryl Sandberg says, ”We cannot change what we are not aware of, and once we are aware, we cannot help but change”, goes right away with us.
+             The fact that the absence of technical manpower exacerbated by lack of platform prevents the development , along with our dedication for work turns our Passion into Profession. 
+            Today we are serving happy clients from all over India. 
+          </p>
+      </div>
+      <div class="img">
+          
+      </div>
+    </section>
+    <section class="vision">
+        <div class="text">
+            <h1>Our Vision</h1><center><p>To Make The World A Better Place</p></center>
+            <p>
+
+                Empowering every individual and enterprise with the power of IT at most affordable prices.
+                Saving time from every individual’s life by using automation.
+                Making the mankind achieve more in every second.
+                Generating highly skilled software developers by effective training.
+            
+             
+            </p>
+        </div>
+        <div class="img">
+            
+        </div>
+      </section>
+
+    <section class="Details">
+      <div class="text">
+          <h1>What We DO ?</h1>
+          <p>
+            Rudra Construction develops customized application for enterprises along with software solutions for desktop, web and all mobile platforms.
+            
+            We also provide other services like post development customization, SEO, IT consulting, domain name registration, web hosting (shared, cloud, VPS and dedicated), email hosting, business sms solutions, IT training (for developers, educational institute and students).
+            
+          </p>
+      </div>
+      <div class="img">
+          
+      </div>
+    </section>
+
+
+    <footer>
+        <div class="row footer">
+            <div class="column arudra">
+                <h3>About Rudra</h3>
+                <p>Rudra is a growing Real Estate Company of North Eastern India. We are having expertise in real estate.</p>
+              <hr>
+              </div>
+            <div class="column quicklink">
+              <h3>Quick links</h3>
+              <p>About Us</p>
+              <p>Projects</p>
+              <p>Customers</p>
+              <a href="http://127.0.0.1:5500/contact.html"><p>Contact</p></a>
+          </div>
+          <div class="column services">
+             <h3>Services</h3> 
+             
+          </div>
+          <div class="column detail">
+              <h3>Get In Touch</h3> 
+              <a href="tel:+918888310818"> <p class="fa fa-phone">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+918888310818</p></a>
+             
+              <p class="fa fa-whatsapp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+916758908970</p>
+             
+             <a href="mailto:555harshalgurav@gmail.com"> <p class="fa fa-envelope">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;555harshalgurav@gmail.com</p></a>
+           </div>
+
+
+        </div>
+        <hr>
+        <div class="copyright">
+            <div class="row">
+                <div class="column">
+                  <p>&#169;&nbsp;2021&nbsp;|&nbsp;All Rights Reserved</p>
+                </div>
+                <div class="column col1">
+                  <h3>Follow Us-</h3>
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+                  <a href="#" class="fa fa-linkedin"></a>
+                  <a href="#" class="fa fa-instagram"></a>
+                </div>
+            </div>
+            
+        </div>
+
+  </footer>
+
+
+</body>
+</html>

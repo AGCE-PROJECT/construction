@@ -5,8 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Customers</title>
+   
     <style>
+         nav{
+            background: blue;
+            height:100px;
+            width: 100%;
+        }
+        label.logo{
+            font-size: 40px;
+            padding:0 100px;
+            line-height: 80px;
+            font-weight: bold;
+            color: cornsilk;
+        }
+        nav ul{
+            float:right;
+            margin-right: 20px;
+        }
+        nav ul li{
+            display: inline-block;
+            line-height: 50px;
+            margin:0 10px;
+            color: white;
+            font-size: 18px;
+            text-transform:uppercase;
+            padding: 4px 10px;
+        }
+        nav ul li a{
+            color: white;
+            
+            
+        }
+         a:active,a:hover{
+            background: rgb(90, 47, 245);
+            transition: .5s;
+            border-radius: 3px;
+            /*padding:2px;*/
+        }
+        .checkbtn{
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+        #check{
+            display: none;
+        }
+
+        @media(max-width: 900px)
+        {
+            label.logo{
+                font-size: 30px;
+                padding-left: 50px;
+            }
+            nav ul li{
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+        @media(max-width: 768px)
+        {
+            .checkbtn{
+                display: block;
+            }
+            nav ul{
+                position:fixed;
+                width:100%;
+                height:100vh;
+                background: black;
+                top: 80px;
+               
+                text-align: center;
+                transition: all .5s;
+               
+
+            }
+           nav ul li{
+               display: block;
+               
+           }
+            a:hover,a.active{
+               background: none;
+
+           }
+           #check:checked ~ ul{
+              
+               display: none;
+           }
+        }
+
         h2{
+            text-align: center;
+            color:  rgb(20, 110, 194);
+        }
+        h1{
             text-align: center;
             color:  rgb(20, 110, 194);
         }
@@ -16,6 +112,8 @@
             color: rgb(20, 110, 194);
             font-weight: bolder;
             text-transform: capitalize;
+            position: relative;
+           
         }
 
         .customer_img{
@@ -94,6 +192,21 @@
 
 </head>
 <body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <label class="logo">Rudra </label>
+        <ul>
+            <a href="index.html" class="active"><li>Home</li></a>
+            <a href="about.html"><li>About Us</li></a>
+            <a href="projects.html"><li>Projects</li></a>
+            <a href="customer.html"><li>Customers</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+        </ul>
+
+
     <section class="customer_head">
         <h1>Happy Customers</h1>
     </section>
